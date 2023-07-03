@@ -9,8 +9,8 @@
 <p>Meal Recipe Generator App is a single page web app that shows detailed recipes.<br>
 <ul>
     <li>The app fetches from a custom json database</li>
-    <li>Users will be able to filter by category of ingredients</li>
-    <li>Users will be able to randomize a recipe</li>
+    <li>Users will be able to filter recipes by country of origin</li>
+    <li>Users will be able to randomize a recipe</li><li>Users will be able to filter recipes by name</li>
 </ul>
 <p>API provided free of charge by <a href = "https://www.themealdb.com">The MealDB</a></p>
 
