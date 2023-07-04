@@ -3,6 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route } from "react-router-dom";
+
+function Home() {
+  return (
+    <div>
+      <h1>Home!</h1>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Route path="/">
+      <Home />
+    </Route>
+  );
+}
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
