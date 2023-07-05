@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -13,19 +13,19 @@ function Home() {
   );
 }
 
-function App() {
-  return (
-    <Route path="/">
-      <Home />
-    </Route>
-  );
-}
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<App />} />
+    <Route path="/home" element={<Home />} />
+    <Route path="/randomrecipe" element={<RandomRecipe />} />
+    <Route path="/search" element={<Search />} />
+    //{/* <App /> */}
+  </Routes>
+  </BrowserRouter>
   </React.StrictMode>
 );
 
