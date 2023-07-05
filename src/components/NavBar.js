@@ -8,6 +8,7 @@ function NavBar() {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/RandomRecipe">Generate Random Recipe</NavLink>
             <NavLink to="/Search">Search</NavLink>
+            <NavLink to="/Cuisines">Cuisines by Country</NavLink>
         </nav>
     )
 }
