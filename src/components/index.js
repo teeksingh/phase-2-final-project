@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Search from './Search'
+import RandomRecipe from './RandomRecipe';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -23,7 +25,8 @@ root.render(
     <Route path="/home" element={<Home />} />
     <Route path="/randomrecipe" element={<RandomRecipe />} />
     <Route path="/search" element={<Search />} />
-    //{/* <App /> */}
+  
+  {/* <App /> */}
   </Routes>
   </BrowserRouter>
   </React.StrictMode>
