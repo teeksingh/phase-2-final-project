@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from './NavBar';
 import RandomRecipe from './RandomRecipe';
 import Search from './Search';
@@ -12,6 +12,7 @@ function App() {
   
   return (
         <div>
+            <Router>
             <NavBar onChangePage={setPage} />
             <Switch>
                 <Route path="/randomrecipe">
@@ -30,24 +31,9 @@ function App() {
                     <h1>404 Not Found</h1>
                 </Route>
             </Switch>
+            </Router>
         </div>
     );
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
 }
 
 export default App;
