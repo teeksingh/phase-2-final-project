@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import NavBar from './src/NavBar';
+import NavBar from './NavBar';
 import RandomRecipe from './RandomRecipe';
-import Search from './src/Search';
-import Cuisines from '../Cuisines';
+import Search from './Search';
+import Cuisines from './Cuisines';
+import Home from "./Home";
 
 
 function App() {
@@ -13,17 +14,20 @@ function App() {
         <div>
             <NavBar onChangePage={setPage} />
             <Switch>
-                <Route path="/home">
-                    <Home />
-                </Route>
                 <Route path="/randomrecipe">
                     <RandomRecipe />
                 </Route>
                 <Route path="/search">
                     <Search />
                 </Route>
-                <Route path="/Cuisines">
+                <Route path="/cuisines">
                     <Cuisines />
+                </Route>
+                <Route exact path="/home">
+                    <Home />
+                </Route>
+                <Route path="*">
+                    <h1>404 Not Found</h1>
                 </Route>
             </Switch>
         </div>
