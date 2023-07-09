@@ -6,11 +6,13 @@
 <p>Currently in development</p>
 
 ## Description
-<p>Meal Recipe Generator App is a single page web app that shows detailed recipes.<br>
+<p>Meal Recipe Finder App is a single page web app that allows a user to list recipes in several ways.<br>
 <ul>
     <li>The app fetches from a custom json database</li>
-    <li>Users will be able to filter recipes by country of origin</li>
-    <li>Users will be able to randomize a recipe</li><li>Users will be able to filter recipes by name</li>
+    <li>Users will be able to filter recipes by category type</li>
+    <li>Users will be able to add a new category type to the database</li>
+    <li>Users will be able to randomize a recipe</li>
+    <li>Users will be able to filter recipes by name</li>
 </ul>
 <p>API provided free of charge by <a href = "https://www.themealdb.com">The MealDB</a></p>
 
@@ -20,15 +22,15 @@
 
 ## Installation
 
+<p>The front end is deployed via Netlify and the backend is deployed via Render.<br>
+You can also choose to fork and clone the repo to your local machine then use 'npm install' to install dependencies then use 'npm start server' to get the app started.</p>
+
 ## Backend Code GitHub Repository
 <p>https://github.com/teeksingh/flatiron-phase2-json-server-template</p>
 
+## Video Walkthrough of App
 
-## Support
-
-## Roadmap
-
-## Contributing
+[Meal Recipe Generator]()
 
 ## License
 <p>MIT License

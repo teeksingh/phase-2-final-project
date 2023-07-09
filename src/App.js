@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from './NavBar';
 import RandomRecipe from './RandomRecipe';
@@ -26,9 +26,6 @@ function App() {
                 </Route>
                 <Route exact path="/home">
                     <Home />
-                </Route>
-                <Route path="*">
-                    <h1>404 Not Found</h1>
                 </Route>
             </Switch>
             </Router>
