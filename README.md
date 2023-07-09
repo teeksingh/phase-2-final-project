@@ -26,10 +26,10 @@
 You can also choose to fork and clone the repo to your local machine then use 'npm install' to install dependencies then use 'npm start server' to get the app started.</p>
 
 ## Backend Code GitHub Repository
-<p>https://github.com/teeksingh/flatiron-phase2-json-server-template</p>
+[Backend GitHub Repo](https://github.com/teeksingh/flatiron-phase2-json-server-template)
 
 
-<p>[URL for deployed server](https://flatiron-phase2-project.onrender.com/)</p>
+[Render.com URL for deployed server](https://flatiron-phase2-project.onrender.com/)
 
 ## Video Walkthrough of App
 
