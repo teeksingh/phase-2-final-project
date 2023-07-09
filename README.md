@@ -28,6 +28,9 @@ You can also choose to fork and clone the repo to your local machine then use 'n
 ## Backend Code GitHub Repository
 <p>https://github.com/teeksingh/flatiron-phase2-json-server-template</p>
 
+
+<p>[URL for deployed server](https://flatiron-phase2-project.onrender.com/)</p>
+
 ## Video Walkthrough of App
 
 [Meal Recipe Generator]()
