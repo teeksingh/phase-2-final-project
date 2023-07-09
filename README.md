@@ -29,7 +29,7 @@ You can also choose to fork and clone the repo to your local machine then use 'n
 [Backend GitHub Repo](https://github.com/teeksingh/flatiron-phase2-json-server-template)
 
 
-[Render.com URL for deployed server](https://flatiron-phase2-project.onrender.com/)
+[Render.com URL for deployed server](https://flatiron-phase2-project.onrender.com/categories)
 
 ## Video Walkthrough of App
 
