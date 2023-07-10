@@ -1,33 +1,33 @@
 import React, {useState, useEffect} from "react";
+import Category from "./Category";
 
 function Home(){
-
-    function getCategories(){
-        fetch("https://flatiron-phase2-project.onrender.com/categories")
-    .then((res) => res.json())
-    .then((data) => setCategories(data));
-    console.log(data)
+    
+    const [category, setCategory] = useState([])
+    const categoryFetcher = async () => {
+        const response = await fetch("http://localhost:4000/categories").then(r => r.json())
+        setCategory(response)
+        console.log(response)
     }
     
+    
+    useEffect(() => {
+          categoryFetcher()
+        },[]);
+    
+      
+
     function addCategory(){
 
     }
     
-    const [category, setCategories] = useState([])
     
-    // useEffect(() => {
-    //     fetch("https://flatiron-phase2-project.onrender.com/categories")
-    //     .then((r) => r.json())
-    //     .then((data) => {
-    //       setCategories(data)
-    //     })
-    //   }, [])
       
 
     return(
         <div>
             <h1>Meal Recipe Generator App</h1>
-           <button className="viewcat" onClick={getCategories}>View Categories</button>
+           <button className="viewcat" onClick={Category}>View Categories</button>
            <button className="addcat" onClick={addCategory}>Add Category</button>
            
         </div>

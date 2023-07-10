@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 
 function Category() {
-
+    
+  
     return(
-        <div></div>
+       <div></div>
     )
 }
 
